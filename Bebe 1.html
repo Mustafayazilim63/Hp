@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeBe Technology group</title>
+<style>
+  body {
+    background-color: black; /* Arka plan yeşil */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Konumlandırma için */
+  }
+  #header {
+    color: white; /* GoalMaster yazısı siyah */
+    font-size: 24px;
+    position: absolute; /* Konumlandırma için */
+    top: 0; /* Üst kenara yapıştırma */
+    left: 0; /* Sol kenara yapıştırma */
+    margin: 10px; /* Kenarlardan boşluk */
+  }
+  #separator {
+    position: absolute; /* Konumlandırma için */
+    top: 39px; /* GoalMaster yazısının altında 5px boşluk bırakma */
+    left: 0; /* Sol kenara yapıştırma */
+    width: 100%; /* Tam genişlik */
+    height: 1px; /* Kalınlık */
+    background-color: White; /* Çizgi rengi siyah */
+  }
+  #sidebar {
+    position: absolute; /* Konumlandırma için */
+    top: 50px; /* GoalMaster yazısının altına çizgi eklenmesi */
+    right: 3px; /* Sağ kenara 3px boşluk */
+    width: 100px; /* Kutu genişliği */
+    height: 100%; /* Tam yükseklik */
+    background-color: white /* Kutu rengi siyah */
+  }
+  #column {
+    position: absolute; /* Konumlandırma için */
+    top: 70px; /* GoalMaster yazısının altından biraz daha aşağı */
+    left: 10px; /* Sol kenara yapıştırma */
+    width: 150px; /* Sütun genişliği */
+    height: 400px; /* Sütun yüksekliği */
+    background-color: white; /* Sütun rengi siyah */
+    color: white; /* Yazı rengi beyaz */
+    font-size: 20px; /* Yazı boyutu 20px */
+    line-height: 30px; /* Satır yüksekliği 30px */
+    padding-left: 10px; /* Sol kenardan içeri girme */
+    font-size: 25px;
+  }
+  
+  #small-column {
+    position: absolute; /* Konumlandırma için */
+    top: 70px; /* GoalMaster yazısının altından biraz daha aşağı */
+    left: 180px; /* Büyük sütunun yanına yapıştırma */
+    width: 150px; /* Küçük sütun genişliği, büyük sütun ile aynı */
+    height: 200px; /* Küçük sütun yüksekliği, büyük sütunun yarısı */
+    background-color: white; /* Küçük sütun rengi siyah */
+  }
+#new-box {
+    position: absolute; /* Konumlandırma için */
+    top: 280px; /* Üstündeki kutunun altına 60px uzaklıkta olması için */
+    right: 40px; /* Sağ kenara 3px boşluk */
+    width: 150px; /* Kutunun genişliği */
+    height: 190px; /* Kutunun yüksekliği */
+    background-color: white; /* Kutu rengi siyah */
+    left: 180px;
+    
+}
+
+#bottom-box {
+    position: fixed; /* Konumlandırma için */
+    bottom: 100px; /* Sayfanın alt kenarına 40 piksel boşluk bırak */
+    left: 46%; /* Sayfanın ortasına yerleştir */
+    transform: translateX(-50%); /* Yatayda merkezleme */
+    width: 310px; /* Kutunun genişliği */
+    height: 150px; /* Kutunun yüksekliği */
+    background-color: white; /* Kutunun arka plan rengi siyah */
+    z-index: 999; /* Diğer öğelerin üzerinde olması için z-index değeri */
+    font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<div id="header">BeBe Technology group</div>
+<div id="separator"></div>
+<div id="sidebar"></div>
+
+
+<a href="hakımızda.html"> 
+<div id="column" style="color: black;">BeBe<br>Technology<br>group</div>
+</a>
+
+<div id="small-column">
+  BeBe Game
+<br>
+<img src="turkish_flag.jpg"> 
+</div>
+
+
+<div id="new-box">BeBe Store</div>
+
+
+<div id="bottom-box" >Bizi <br> Destekle</div>
+
+
+</body>
+</html>
